@@ -12,3 +12,6 @@
 | `post`     |  ` /api/comment/{commentId}/reComment `       | 대댓글 생성                   | 없음                   |  ` schedules `    | ` {"content" : "대댓글 내용"} `                                 |`  `  
 | `PUT`      |    ` /api/comment/{commentId}/reComment `     | 대댓글 수정                   | ` recommentId `       |  ` schedules `    | ` {"content" : "수정된 대댓글 내용"} `                            |`  `  
 | `post`     |      ` /api/comment/{commentId}/reComment `   | 대댓글 삭제                   | ` recommentId `       |  ` schedules `    | 없음                                                           |`  `  
+
+## ERD 
+![ERD 다이어그램](./docs/scheduleproject.png)
