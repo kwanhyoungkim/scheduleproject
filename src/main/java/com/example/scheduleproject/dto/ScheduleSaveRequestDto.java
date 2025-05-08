@@ -13,4 +13,13 @@ public class ScheduleSaveRequestDto {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+    public ScheduleSaveRequestDto(Long id, Long userId, String title, String content, LocalDateTime createdAt, LocalDateTime updatedAt){
+        this.id=id;
+        this.userId=userId;
+        this.title=title;
+        this.content=content;
+        this.createdAt=createdAt;
+        this.updatedAt=updatedAt;
+    }
+
 }

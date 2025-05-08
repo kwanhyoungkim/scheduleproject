@@ -1,25 +1,23 @@
 package com.example.scheduleproject.entity;
-
-
-import com.example.scheduleproject.dto.CommentRequestDto;
+import com.example.scheduleproject.dto.CommentSaveRequestDto;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Getter
 public class Comment {
 
-    public Comment() {
-
-    }
-
-
+    @Setter
     private Long userId;
     private Long commentId;
     private String comment;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    @Setter private LocalDateTime createdAt;
+    @Setter private LocalDateTime updatedAt;
 
+    public Comment(){
+
+    }
 
     public Comment(Long userId, Long commentId, String comment, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.userId = userId;
@@ -29,7 +27,7 @@ public class Comment {
         this.updatedAt= updatedAt;
     }
 
-    public Comment(CommentRequestDto commentRequestDto) {
+    public Comment(CommentSaveRequestDto commentRequestDto) {
         this.userId = commentRequestDto.getUserId();
         this.commentId = commentRequestDto.getCommentId();
         this.comment = commentRequestDto.getComment();
@@ -37,13 +35,8 @@ public class Comment {
         this.updatedAt=commentRequestDto.getUpdatedAt();
     }
 
-    public Comment(Long userId, Long commentId, String comment, LocalDateTime createdAt, LocalDateTime updatedAt) {
-        this.userId=userId;
-        this.commentId=commentId;
-        this.comment=comment;
-        this.createdAt=createdAt;
-        this.updatedAt=updatedAt;
-    }
+
+
 }
 
 

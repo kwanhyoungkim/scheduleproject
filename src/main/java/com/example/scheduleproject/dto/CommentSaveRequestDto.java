@@ -5,7 +5,7 @@ import lombok.Getter;
 import java.time.LocalDateTime;
 
 @Getter
-public class CommentRequestDto {
+public class CommentSaveRequestDto {
 
     private Long commentId;
     private Long userId;
@@ -13,7 +13,7 @@ public class CommentRequestDto {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    public CommentRequestDto(Long userId, Long commentId, String comment, LocalDateTime createdAt, LocalDateTime updatedAt){
+    public CommentSaveRequestDto(Long userId, Long commentId, String comment, LocalDateTime createdAt, LocalDateTime updatedAt){
         this.userId=userId;
         this.commentId=commentId;
         this.comment=comment;
