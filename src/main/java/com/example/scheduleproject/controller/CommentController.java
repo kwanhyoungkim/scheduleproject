@@ -1,4 +1,4 @@
-package controller;
+package com.example.scheduleproject.controller;
 
 import com.example.scheduleproject.entity.Comment;
 import com.example.scheduleproject.service.CommentService;
@@ -30,7 +30,7 @@ public class CommentController {
     }
 
     // 댓글 조회
-    @GetMapping
+    @GetMapping("/api/comment/{commentId}")
     public ResponseEntity<List<Comment>> getAllComment(){
         List<Comment> comment=commentService.getAllComment();
         return new ResponseEntity<>(comment, OK);

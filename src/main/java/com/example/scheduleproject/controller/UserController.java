@@ -1,4 +1,4 @@
-package controller;
+package com.example.scheduleproject.controller;
 
 
 import com.example.scheduleproject.dto.UserResponseDto;

@@ -1,4 +1,4 @@
-package controller;
+package com.example.scheduleproject.controller;
 
 import com.example.scheduleproject.entity.ReComment;
 import com.example.scheduleproject.service.ReCommentService;
