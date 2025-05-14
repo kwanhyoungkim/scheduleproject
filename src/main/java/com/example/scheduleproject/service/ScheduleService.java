@@ -22,7 +22,7 @@ public class ScheduleService {
     public ScheduleService(ScheduleRepository scheduleRepository){this.scheduleRepository=scheduleRepository;}
 
     // 일정 생성
-    public static Schedule saveSchedule(Schedule schedule){return scheduleRepository.save(schedule);}
+    public Schedule saveSchedule(Schedule schedule){return scheduleRepository.save(schedule);}
 
 
     // 일정 조회
